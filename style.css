@@ -247,6 +247,9 @@ html,body{
     .donate-form input[type="submit"]{
         grid-column: span 2;
     }
+    .donate-form fieldset:nth-child(5){
+        grid-column: span 2;
+    }
 }
 
 
