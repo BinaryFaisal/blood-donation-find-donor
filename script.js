@@ -30,7 +30,7 @@ document.getElementById('district').addEventListener('change', function () {
 
         chuadanga: ['Alamdanga', 'Chuadanga Sadar', 'Damurhuda', 'Darshana', 'Jibannagar'],
 
-        "Cox’s bazar": ['Chakaria', 'Cox’s Bazar', 'Eidgaon', 'Kutubdia', 'Maheshkhali', 'Pekua', 'Ramu', 'Teknaf', 'Ukhia'],
+        "cox's bazar": ['Chakaria', 'Cox’s Bazar', 'Eidgaon', 'Kutubdia', 'Maheshkhali', 'Pekua', 'Ramu', 'Teknaf', 'Ukhia'],
 
         cumilla: ['Bangora Bazar', 'Barura', 'Brahmanpara', 'Burichong', 'Chandina', 'Chaudhagram', 'Daudkandi', 'Debidwar', 'Homna', 'Kotwali Model', 'Laksam', 'Lalmol', 'Manoharganj', 'Meghna', 'Muradnagar', 'Nangalkot', 'Sadar Dakshin', 'Sada Dakshin', 'Titas'],
 
@@ -147,6 +147,27 @@ document.getElementById('district').addEventListener('change', function () {
             policeStationSelect.appendChild(option);
         });
     }
+});
+
+// Form submission logic and popup handling
+document.getElementById('registrationForm').addEventListener('submit', function (event) {
+    event.preventDefault(); // Prevent form submission for demonstration purposes
+
+    // Show the popup
+    var popup = document.getElementById('popup');
+    popup.style.display = 'block';
+
+    // Close popup when "X" is clicked
+    // document.getElementById('closePopup').onclick = function () {
+    //     popup.style.display = 'none';
+    // };
+
+    // Close popup if the user clicks outside the popup content
+    // window.onclick = function (event) {
+    //     if (event.target === popup) {
+    //         popup.style.display = 'none';
+    //     }
+    // };
 });
 
 // Script for Navigation bar
