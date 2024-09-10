@@ -55,6 +55,7 @@ html,body{
     display: none;
 }
 
+
 /* Navigation Bar */
 .navbar{
     padding: 10px 30px;
@@ -203,7 +204,7 @@ html,body{
 }
 
 .input_container{
-    margin: 15px 0px;
+    margin: 5px 0px;
     border: 1px solid rgba(0, 0, 0, 0.65);
     border-radius: 5px;
     padding: 10px;
@@ -252,7 +253,114 @@ html,body{
     }
 }
 
+/* Popup modal styling */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
+.popup-content {
+    margin: 20% auto;
+    padding: 20px 10px;
+    width: 150px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(255, 255, 255);
+}
+
+.popup-content i{
+    color: #C60513;
+    font-size: 30px;
+}
+
+.popup-content p{
+    font-size: 18px;
+    margin: 10px 0px;
+}
+
+.popup-content button{
+    padding: 10px;
+    background: #C60513;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup-content a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.popup-content button:hover{
+    box-shadow: inset 0px 8px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
+
+/* Donors Card Section */
+
+.donor-container{
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.donor-card{
+    border: 1px solid rgba(198, 5, 19, 0.18);
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(234, 234, 234);
+    padding: 10px;
+}
+
+.donor-card:hover{
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+.donor-img{
+    padding: 10px;
+
+}
+.donor-img img{
+    width: 100%;
+}
+
+.donor-info{
+    padding: 10px;
+}
+.donor-info div{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: start;
+    color: #333333;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 5px 0px;
+}
 
 /* Footer */
 .footer-wrapper{
